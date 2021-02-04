@@ -25,7 +25,7 @@ RUN pip install protobuf
 RUN pip install kafka-python
 
 
-COPY event-generator.py /app
+COPY consumer.py /app
 COPY messages_pb2.py /app
 
 CMD ["python", "/app/event-generator.py"]

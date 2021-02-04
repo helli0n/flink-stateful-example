@@ -80,9 +80,9 @@ services:
       context: ./greeter
     expose:
       - "8000"
-  event-generator:
+  consumer:
     build:
-      context: generator
+      context: consumer
       dockerfile: Dockerfile
     depends_on:
       - kafka-broker
