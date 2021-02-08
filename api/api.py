@@ -24,12 +24,12 @@ from messages_pb2 import GreetRequest, GreetResponse
 
 from kafka import KafkaProducer
 
-KAFKA_BROKER = "kafka-broker:9092"
+#KAFKA_BROKER = "kafka-broker:9092"
 con = psycopg2.connect(
     database="flink",
     user="postgres",
     password="postgres",
-    host="db",
+    host="localhost",
     port="5432"
 )
 cur = con.cursor()
@@ -105,4 +105,4 @@ def user_list():
 
 if __name__ == "__main__":
     app.debug = True
-    app.run(host='0.0.0.0', port='8888')
+    app.run(host='0.0.0.0', port='8881')

@@ -28,6 +28,6 @@ COPY messages_pb2.py /app
 
 EXPOSE 8888
 
-#CMD ["gunicorn", "-b", "0.0.0.0:8000 ", "-w 4", "greeter:app"]
-CMD ["python", "api.py"]
+CMD ["gunicorn", "-b", "0.0.0.0:8888 ", "-w 4", "api:app"]
+#CMD ["python", "api.py"]
 

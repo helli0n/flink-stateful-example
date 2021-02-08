@@ -19,5 +19,3 @@ FROM ververica/flink-statefun:2.2.0
 
 RUN mkdir -p /opt/statefun/modules/greeter
 ADD module.yaml /opt/statefun/modules/greeter
-
-
