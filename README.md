@@ -1,8 +1,12 @@
 # flink-stateful-example
 
+---
 ### Docker-compose
 Deployment using docker compose
+
 `docker-compose up -d`
+
+---
 ### Postgres DB
 Need to create database flink and table users
 
@@ -39,6 +43,7 @@ TABLESPACE pg_default;
 ALTER TABLE public.users
 OWNER to postgres;
 ```
+---
 
 ### testing script
 
