@@ -7,8 +7,7 @@ time {
   echo "Current users count is "$cur_number
   echo "Will be added ${count_add} users"
   for (( count=1; count<=${count_add}; count++ )); do
-        curl -s --header "Content-Type: application/json" --request POST --data '{"name":"'"xyz1${count}"'","full_name":"'"xyz1${count}"'"}' $url/add-user > /dev/null
-      i=$i+1
+      curl -s --header "Content-Type: application/json" --request POST --data '{"name":"'"xyz1${count}"'","full_name":"'"xyz1${count}"'"}' $url/add-user > /dev/null
   done
   cur_number_new=$cur_number
   expect_num=$((cur_number + count_add))
